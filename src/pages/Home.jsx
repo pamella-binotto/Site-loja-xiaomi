@@ -2,7 +2,8 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import ProductCard from "../components/ProductCard";
 
-import React from "react";
+
+
 import redmi13 from "../assets/redmi_13.png";
 import redmi15c from "../assets/redmi_15C.png";
 import pococ85 from "../assets/Poco_C85.png";
@@ -34,6 +35,9 @@ function Home() {
     <>
       <Header />
       <main>
+     <h1 className="text-4xl font-bold text-primary text-center mt-6">
+  Agora o Tailwind 4 está funcionando 🔥
+</h1>
         <section className="produtos">
           <h2>Catálogo de Produtos 📱 </h2>
           <div className="flex-container">

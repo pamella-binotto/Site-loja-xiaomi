@@ -1,11 +1,13 @@
 function Header() {
   return (
     <header>
-      <h1>Ju Eletrônicos</h1>
+        <img src=""/>
+      <h1>Ju Eletrônicos - Especializada Xiaomi </h1>
       <nav>
         <a href="#">Home</a>
         <a href="#">Modelos</a>
         <a href="#">Contato</a>
+        <a ref="#">Sobre Nós</a>
       </nav>
     </header>
   );
