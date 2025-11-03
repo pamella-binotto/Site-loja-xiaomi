@@ -35,9 +35,6 @@ function Home() {
     <>
       <Header />
       <main>
-     <h1 className="text-4xl font-bold text-primary text-center mt-6">
-  Agora o Tailwind 4 está funcionando 🔥
-</h1>
         <section className="produtos">
           <h2>Catálogo de Produtos 📱 </h2>
           <div className="flex-container">
