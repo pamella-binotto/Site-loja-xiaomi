@@ -5,13 +5,12 @@ function Header() {
     <header className="flex justify-between items-center px-8 py-4 bg-gray-600 text-light shadow-md">
       {/* Logo + Nome */}
       <div className="flex items-center gap-3">
-        <img
-          src={logo}
-          alt="Logo Ju Eletrônicos"
-          className="w-15 h-15  rounded-full bg-white "
-        />
-        <h1 className="text-xl font-semibold tracking-wide">
-          Ju Eletrônicos
+        <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center overflow-hidden">
+          <img src={logo} alt="Logo Ju Eletrônicos" className="object-contain w-10 h-10" />
+        </div>
+        
+        <h1 className="text-[16px] font-semibold tracking-wide">
+          Ju Eletrônicos - Especializa Xiaomi
         </h1>
       </div>
 
