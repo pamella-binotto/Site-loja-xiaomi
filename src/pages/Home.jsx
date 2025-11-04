@@ -14,6 +14,7 @@ import pocom7pro from "../assets/poco_M7P.png"
 import note14pro from "../assets/note_14p4g.png"
 import pocox7 from "../assets/poco_x7.png"
 import note14pro5g from "../assets/note_14p5g.png"
+import HeroCarousel from "../components/HeroCarousel";
 
 
 
@@ -34,6 +35,7 @@ function Home() {
   return (
     <>
       <Header />
+      <HeroCarousel />
 
       {/* Seção HERO */}
       <section className="bg-dark text-light py-16 px-6 text-center flex flex-col items-center justify-center">
