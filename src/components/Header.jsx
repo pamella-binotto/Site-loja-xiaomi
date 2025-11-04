@@ -2,8 +2,8 @@ import logo from "../assets/logo.jpg";
 
 function Header() {
   return (
-    <header className="flex justify-between items-center px-8 py-4 bg-gray-600 text-light shadow-md">
-      {/* Logo + Nome */}
+    <header className="flex justify-between items-center px-8 py-4 bg-light text-black shadow-md">
+
       <div className="flex items-center gap-3">
         <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center overflow-hidden">
           <img src={logo} alt="Logo Ju Eletrônicos" className="object-contain w-10 h-10" />
@@ -14,7 +14,7 @@ function Header() {
         </h1>
       </div>
 
-      {/* Navegação */}
+     
       <nav className="flex gap-6 text-sm font-medium">
         <a href="#" className="hover:text-primary transition-colors">
           Home
