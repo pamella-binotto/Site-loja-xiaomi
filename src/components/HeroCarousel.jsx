@@ -14,12 +14,12 @@ function HeroCarousel() {
     {
       id: 1,
       image: bf,
-      link: "#", 
+      link: "#",
     },
     {
       id: 2,
       image: redmi15,
-      link: "#", 
+      link: "#",
     },
     {
       id: 3,
@@ -34,7 +34,7 @@ function HeroCarousel() {
   ];
 
   return (
-    <section className="relative w-full h-[80vh] overflow-hidden">
+    <section className="relative w-screen h-[80vh] md:h-[85vh] lg:h-[90vh] overflow-hidden">
       <Swiper
         spaceBetween={0}
         centeredSlides={true}
@@ -53,16 +53,15 @@ function HeroCarousel() {
           <SwiperSlide key={slide.id}>
             <a
               href={slide.link}
-              className="block relative w-full h-full group cursor-pointer"
+              className="block relative w-full h-full cursor-pointer"
             >
-              {/* Imagem */}
               <img
                 src={slide.image}
                 alt="Promoção Ju Eletrônicos"
-                className="w-full h-full object-cover"
+                className="block w-full h-full object-fill"
               />
 
-             
+
               <div className="hidden md:flex absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-all items-center justify-center">
                 <button className="bg-primary text-light px-6 py-3 rounded-md font-semibold hover:bg-orange-600 transition-all">
                   Ver detalhes
