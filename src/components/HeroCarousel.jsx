@@ -14,38 +14,29 @@ function HeroCarousel() {
     {
       id: 1,
       image: bf,
-      title: "Ofertas de Black Friday 🖤",
-      subtitle:
-        "Aproveite descontos exclusivos nos melhores modelos Xiaomi. Estoque limitado!",
-      button: "Ver Ofertas",
+      link: "#", 
     },
     {
       id: 2,
       image: redmi15,
-      title: "Novo Redmi 15",
-      subtitle: "Desempenho e design premium com câmeras incríveis 📱",
-      button: "Compre Agora",
+      link: "#", 
     },
     {
       id: 3,
       image: redmi15c,
-      title: "Redmi 15C em promoção!",
-      subtitle: "Mais memória, mais velocidade — perfeito para o dia a dia 🚀",
-      button: "Ver Modelos",
+      link: "#",
     },
     {
       id: 4,
       image: pococ85,
-      title: "POCO C85",
-      subtitle: "Alta performance e bateria que dura o dia inteiro ⚡",
-      button: "Saiba Mais",
+      link: "#",
     },
   ];
 
   return (
-    <section className="relative w-full h-[80vh]">
+    <section className="relative w-full h-[80vh] overflow-hidden">
       <Swiper
-        spaceBetween={30}
+        spaceBetween={0}
         centeredSlides={true}
         autoplay={{
           delay: 4000,
@@ -56,32 +47,28 @@ function HeroCarousel() {
         }}
         navigation={true}
         modules={[Autoplay, Pagination, Navigation]}
-        className="mySwiper w-full h-full"
+        className="w-full h-full"
       >
         {slides.map((slide) => (
           <SwiperSlide key={slide.id}>
-            {/* Imagem de fundo */}
-            <div
-              className="w-full h-full bg-cover bg-center flex flex-col items-center justify-center text-center text-light"
-              style={{
-                backgroundImage: `url(${slide.image})`,
-              }}
+            <a
+              href={slide.link}
+              className="block relative w-full h-full group cursor-pointer"
             >
-              {/* Fundo escuro transparente pra contraste */}
-              <div className="absolute inset-0 bg-black/40"></div>
+              {/* Imagem */}
+              <img
+                src={slide.image}
+                alt="Promoção Ju Eletrônicos"
+                className="w-full h-full object-cover"
+              />
 
-              <div className="relative z-10 max-w-3xl px-6">
-                <h1 className="text-4xl md:text-5xl font-bold mb-4 text-primary drop-shadow-lg">
-                  {slide.title}
-                </h1>
-                <p className="text-lg md:text-xl mb-8 text-gray-100">
-                  {slide.subtitle}
-                </p>
+             
+              <div className="hidden md:flex absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-all items-center justify-center">
                 <button className="bg-primary text-light px-6 py-3 rounded-md font-semibold hover:bg-orange-600 transition-all">
-                  {slide.button}
+                  Ver detalhes
                 </button>
               </div>
-            </div>
+            </a>
           </SwiperSlide>
         ))}
       </Swiper>
