@@ -5,7 +5,6 @@ function ProductCard({ name, storage, ram, image}) {
       <h3>{name}</h3>
       <p>{storage}</p>
       <p>{ram}</p>
-       <button className="">Ver ficha técnica</button>
     </div>
   );
 }

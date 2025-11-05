@@ -1,7 +1,7 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import ProductCard from "../components/ProductCard";
-
+import HeroCarousel from "../components/HeroCarousel";
 
 
 import redmi13 from "../assets/redmi_13.png";
@@ -14,7 +14,7 @@ import pocom7pro from "../assets/poco_M7P.png"
 import note14pro from "../assets/note_14p4g.png"
 import pocox7 from "../assets/poco_x7.png"
 import note14pro5g from "../assets/note_14p5g.png"
-import HeroCarousel from "../components/HeroCarousel";
+
 
 
 
@@ -34,11 +34,12 @@ function Home() {
 
   return (
     <>
+      
       <Header />
       <HeroCarousel />
 
       {/* Seção HERO */}
-      <section className="bg-dark text-light py-16 px-6 text-center flex flex-col items-center justify-center">
+      <section className="bg-dark text-light py-16 px-6 text-center flex flex-col items-center justify-center w-screen h-screen overflow-x-hidden">
         <h1 className="text-4xl md:text-5xl font-bold mb-4 text-primary">
           Os melhores smartphones Xiaomi estão aqui 🔥
         </h1>

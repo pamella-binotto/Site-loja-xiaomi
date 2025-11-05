@@ -10,6 +10,8 @@
   --color-gray: #d1d5db;
 }
 
+
+
 body {
   font-family: system-ui, sans-serif;
   background-color: var(--color-light);
