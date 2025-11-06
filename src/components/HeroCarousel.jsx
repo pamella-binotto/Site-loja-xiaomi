@@ -34,7 +34,7 @@ function HeroCarousel() {
   ];
 
   return (
-    <section className="relative w-screen h-[80vh] md:h-[85vh] lg:h-[90vh] overflow-hidden">
+    <section className="relative w-full overflow-hidden">
       <Swiper
         spaceBetween={0}
         centeredSlides={true}
@@ -58,7 +58,7 @@ function HeroCarousel() {
               <img
                 src={slide.image}
                 alt="Promoção Ju Eletrônicos"
-                className="block w-full h-full object-fill"
+                className="block w-full h-full"
               />
 
 
