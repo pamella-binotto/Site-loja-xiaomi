@@ -83,7 +83,8 @@ const produtos = [
     
          { id: "note14", 
             name: "Note 14", 
-            storage: "256GB Memória Interna", ram: "16GB Ram", 
+            storage: "256GB Memória Interna", 
+            ram: "16GB Ram (8+8GB expansível)", 
             image: note14,
             price: ["💵 R$1.399 no dinheiro ou pix",
                 "💳 R$1.499 no débito" , 
