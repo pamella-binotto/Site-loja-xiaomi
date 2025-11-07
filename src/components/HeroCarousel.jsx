@@ -8,27 +8,35 @@ import pococ85 from "../assets/pococ85_hero.png";
 import redmi15c from "../assets/redmi15c_hero.png";
 import redmi15 from "../assets/redmi15_hero.png";
 import bf from "../assets/bf_hero.png";
+import pococ85_mb from "../assets/pococ85_mb.png";
+import redmi15c_mb from "../assets/redmi15c_mb.png";
+import redmi15_mb from "../assets/redmi15_mb.png";
+import bf_mb from "../assets/bf_mb.png";
 
 function HeroCarousel() {
   const slides = [
     {
       id: 1,
       image: bf,
+      imageMobile: bf_mb,
       link: "#",
     },
     {
       id: 2,
       image: redmi15,
+      imageMobile: redmi15_mb,
       link: "#",
     },
     {
       id: 3,
       image: redmi15c,
+      imageMobile: redmi15c_mb,
       link: "#",
     },
     {
       id: 4,
       image: pococ85,
+      imageMobile: pococ85_mb,  
       link: "#",
     },
   ];
