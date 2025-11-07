@@ -36,10 +36,12 @@ function HeroCarousel() {
     {
       id: 4,
       image: pococ85,
-      imageMobile: pococ85_mb,  
+      imageMobile: pococ85_mb,
       link: "#",
     },
   ];
+
+  const isMobile = window.innerWidth <= 768;
 
   return (
     <section className="relative w-full overflow-hidden ">
@@ -63,12 +65,13 @@ function HeroCarousel() {
               href={slide.link}
               className="block relative w-full h-full cursor-pointer"
             >
-              <img
-                src={slide.image}
-                alt="Promoção Ju Eletrônicos"
-                className="block w-full h-full "
-              />
-
+             
+                <img
+                  src={isMobile ? slide.imageMobile : slide.image}
+                  alt="Promoção Ju Eletrônicos"
+                  className="block w-full h-full "
+                />
+              
 
               <div className="hidden md:flex absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-all items-center justify-center">
                 <button className="bg-primary text-light px-6 py-3 rounded-md font-semibold hover:bg-orange-600 transition-all">
