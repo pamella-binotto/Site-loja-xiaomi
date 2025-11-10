@@ -10,6 +10,7 @@ import note14pro from "../assets/note_14p4g.png";
 import pocox7 from "../assets/poco_x7.png";
 import note14pro5g from "../assets/note_14p5g.png"
 import redmi15 from "../assets/redmi_15.png";
+import pocox7pro from "../assets/poco_x7pro.png";
 
 
 const produtos = [
@@ -248,7 +249,7 @@ const produtos = [
         id: "note14pro5g",
         name: "Note 14 PRO 5G",
         storage: "256GB Memória Interna ",
-        ram: "16GB Ram",
+        ram: "16GB Ram (8+8GB expansível)",
         image: note14pro5g,
         price: ["💵 R$2.080 no dinheiro ou pix",
             "💳 R$2.199 no débito",
@@ -259,6 +260,28 @@ const produtos = [
             camera: "2000MP / 16MP frontal",
             filmagens: "4K a 30fps",
             bateria: "5110mAh com carregador 45W",
+            sistema: "HyperOs baseado em Android 14",
+            nfc: "Sim",
+            ip68: "Sim",
+            garantia: "90 dias contra defeitos de fabricação"
+        }
+    },
+
+    {
+        id: "pocox7pro",
+        name: "Poco x7 PRO 5G",
+        storage: "256GB Memória Interna ",
+        ram: "16GB Ram (8+8GB expansível)",
+        image: pocox7pro,
+        price: ["💵 R$2.180 no dinheiro ou pix",
+            "💳 R$2.299 no débito",
+            "💳Até 12x de R$224,06 no crédito"],
+        ficha: {
+            tela: '6.67" AMOLED 120Hz',
+            processador: "MediaTek Dimensity 8400 Ultra",
+            camera: "50MP / 20MP frontal",
+            filmagens: "4K a 60fps",
+            bateria: "6000mAh com carregador 90W",
             sistema: "HyperOs baseado em Android 14",
             nfc: "Sim",
             ip68: "Sim",
