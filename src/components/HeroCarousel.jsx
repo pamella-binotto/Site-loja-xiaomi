@@ -3,6 +3,8 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import { Link } from "react-router-dom";
+
 
 import pococ85 from "../assets/pococ85_hero.png";
 import redmi15c from "../assets/redmi15c_hero.png";
@@ -19,25 +21,25 @@ function HeroCarousel() {
       id: 1,
       image: bf,
       imageMobile: bf_mb,
-      link: "#",
+      link: "#contato",
     },
     {
       id: 2,
       image: redmi15,
       imageMobile: redmi15_mb,
-      link: "#",
+      link: "/produto/redmi15",
     },
     {
       id: 3,
       image: redmi15c,
       imageMobile: redmi15c_mb,
-      link: "#",
+      link: "/produto/redmi15c",
     },
     {
       id: 4,
       image: pococ85,
       imageMobile: pococ85_mb,
-      link: "#",
+      link: "/produto/pococ85",
     },
   ];
 
@@ -61,8 +63,7 @@ function HeroCarousel() {
       >
         {slides.map((slide) => (
           <SwiperSlide key={slide.id}>
-            <a
-              href={slide.link}
+            <Link to={slide.link}
               className="block relative w-full h-full cursor-pointer"
             >
              
@@ -78,7 +79,7 @@ function HeroCarousel() {
                   Ver detalhes
                 </button>
               </div>
-            </a>
+            </Link>
           </SwiperSlide>
         ))}
       </Swiper>
