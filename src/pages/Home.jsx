@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 import ProductCard from "../components/ProductCard";
 import HeroCarousel from "../components/HeroCarousel";
 import produtos from "../data/produtos";
-
+import WhatsAppButton from "../components/WhatsAppButton";
 
 
 
@@ -80,6 +80,8 @@ function Home() {
           Chamar no WhatsApp
         </a>
       </section>
+
+      <WhatsAppButton />
 
       <Footer />
     </>
