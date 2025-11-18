@@ -21,11 +21,11 @@ function Home() {
       <HeroCarousel />
 
       {/* Seção HERO */}
-      <section id="home" className="bg-dark text-light py-16 px-6 text-center flex flex-col items-center justify-center w-screen h-screen overflow-x-hidden">
+      <section id="home" className="bg-white text-shadow-black py-16 px-6 text-center flex flex-col items-center justify-center w-screen h-screen overflow-x-hidden">
         <h1 className="text-4xl md:text-5xl font-bold mb-4 text-primary">
           Os melhores smartphones Xiaomi estão aqui 🔥
         </h1>
-        <p className="max-w-2xl text-gray text-lg mb-8">
+        <p className="max-w-2xl text-shadow-black text-lg mb-8">
           Qualidade, desempenho e garantia de confiança. Explore nossos modelos e descubra o que há de mais novo em tecnologia.
         </p>
 

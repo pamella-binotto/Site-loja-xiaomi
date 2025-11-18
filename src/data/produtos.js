@@ -155,7 +155,7 @@ const produtos = [
 
 
     {
-        id: "note145g ",
+        id: "note145g",
         name: "Note 14 5G",
         storage: "256GB Memória Interna",
         ram: "16GB Ram (8+8GB expansível)",
