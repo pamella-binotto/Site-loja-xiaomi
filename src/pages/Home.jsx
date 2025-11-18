@@ -5,6 +5,7 @@ import ProductCard from "../components/ProductCard";
 import HeroCarousel from "../components/HeroCarousel";
 import produtos from "../data/produtos";
 import WhatsAppButton from "../components/WhatsAppButton";
+import GoogleReviews from "../components/GoogleReviews";
 
 
 
@@ -82,6 +83,7 @@ function Home() {
       </section>
 
       <WhatsAppButton />
+      <GoogleReviews />
 
       <Footer />
     </>
